@@ -5,31 +5,22 @@ function prosesFizzBuzz() {
     let arrHasil = [];
 
     function fizzBuzz(n) { 
-        // let a = 1;
-
         for(i = 1; i <= n; i++) {
-            // a *= i;
-
             if (i % 3 == 0 && i % 5 == 0) {
-                // return "fizzbuzz";
-                arrHasil.push("fizzbuzz")
+                arrHasil.push(` fizzbuzz(${i})`);
             } else if (i % 5 == 0) {
-                // return "buzz";
-                arrHasil.push("buzz")
+                arrHasil.push(` buzz(${i})`);
             } else if (i % 3 == 0) {
-                // return "fizz";
-                arrHasil.push("fizz")
+                arrHasil.push(` fizz(${i})`);
             } else {
-                // return i;
-                arrHasil.push(i)
-                // console.log(i);
+                arrHasil.push(` ${i}`);
             }
         }
-        // return a;   
     }
 
     console.log(arrHasil);
-    let hasil_fakto = fizzBuzz(id_angka);
+    fizzBuzz(id_angka);
+    
     id_t_angka.innerText = id_angka;
     id_t_hasil.innerText = arrHasil;
 }
